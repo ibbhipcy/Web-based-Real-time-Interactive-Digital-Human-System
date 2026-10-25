@@ -59,14 +59,13 @@ To avoid static, repetitive animations, the system employs Python's threading mo
 ### Prerequisites
 *   Python 3.9+
 *   FFmpeg (required for video audio processing)
-*   API Keys for: GPT-4.1, Seedream, Veo, Whisper (OpenAI), and TTS.
+*   API Keys for: GPT-4.1, Seedream, Veo, Whisper (OpenAI), and TTS, etc.
 
 ### Installation
-1. Clone the repository:
-       git clone https://github.com/yourusername/interactive-digital-character.git
-       cd interactive-digital-character
-2. Install the required dependencies:
-       pip install -r requirements.txt
+Clone the repository:
+   git clone https://github.com/yourusername/interactive-digital-character.git
+   cd interactive-digital-character
+
 
 ### Configuration
 During development, the external AI APIs were integrated via **Hongyun (宏云)**, an API service provider. 
@@ -83,16 +82,12 @@ Run the Flask application:
     python app.py
 Access the interface by navigating to `http://localhost:5000` in your web browser.
 
-## Demonstration
-A video demonstration of the complete workflow and interactive features can be viewed at: 
-[Insert YouTube or Bilibili Video Link Here]
-
 ## Author
 [Zheng Kaixin]
 *This project was developed independently as a personal portfolio piece.*
 
 > **Important Note**
 > 
-> While the core architecture and code logic of this project are fully functional, some external AI API services integrated in this demo may no longer be active or have changed their access policies.
+> Some external AI API services integrated in this demo may no longer be active or have changed their access policies.
 > 
 > If you encounter errors related to API requests (such as 404 or Auth errors), please be aware that this is likely due to expired third-party endpoints rather than the core logic of the project. The codebase is provided as a technical demonstration of multimodal integration, SSE streaming, and asynchronous processing.

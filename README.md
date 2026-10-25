@@ -88,3 +88,9 @@ A video demonstration of the complete workflow and interactive features can be v
 ## Author
 [Zheng Kaixin]
 *This project was developed independently as a personal portfolio piece.*
+
+> **Important Note**
+> 
+> While the core architecture and code logic of this project are fully functional, some external AI API services integrated in this demo may no longer be active or have changed their access policies.
+> 
+> If you encounter errors related to API requests (such as 404 or Auth errors), please be aware that this is likely due to expired third-party endpoints rather than the core logic of the project. The codebase is provided as a technical demonstration of multimodal integration, SSE streaming, and asynchronous processing.

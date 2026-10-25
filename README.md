@@ -1,7 +1,7 @@
-# Multi-modal Interactive Digital Human System
+# Multi-modal Interactive Digital Character System
 
 ## Project Overview
-This project is a web-based, real-time interactive digital human system that bridges static AI image generation with dynamic human-computer interaction. It provides an end-to-end pipeline allowing users to generate personalized 3D avatars from text prompts and communicate with them via low-latency voice or text. Furthermore, the system integrates a semantic emotion feedback loop, enabling the digital human's facial expressions and body movements to evolve dynamically based on the context of the conversation.
+This project is a web-based, real-time interactive digital character system that bridges static AI image generation with dynamic human-computer interaction. It provides an end-to-end pipeline allowing users to generate personalized 3D avatars from text prompts and communicate with them via low-latency voice or text. Furthermore, the system integrates a semantic emotion feedback loop, enabling the digital character's facial expressions and body movements to evolve dynamically based on the context of the conversation.
 
 ## System Architecture & Core Modules
 
@@ -38,21 +38,21 @@ To avoid static, repetitive animations, the system employs Python's threading mo
 
 ## Directory Structure
 
-├── app.py                     # Flask backend server and API routing
-├── requirements.txt           # Python dependencies
-├── templates/
-│   └── index.html             # Frontend UI and stream handling
-├── Draw/                      # Text-to-Image generation module
-│   └── h_seedream40_character_real.py
-├── Video/                     # Image-to-Video generation module
-│   └── h_veo.py
-├── Language/                  # LLM dialogue and streaming module
-│   └── h_streamTalk.py
-├── Audio/                     # Text-to-Speech and caching module
-│   └── h_tts.py
-├── Listen/                    # Speech-to-Text (ASR) module
-│   └── h_asr.py
-└── README.md
+    ├── app.py                     # Flask backend server and API routing
+    ├── requirements.txt           # Python dependencies
+    ├── templates/
+    │   └── index.html             # Frontend UI and stream handling
+    ├── Draw/                      # Text-to-Image generation module
+    │   └── h_seedream40_character_real.py
+    ├── Video/                     # Image-to-Video generation module
+    │   └── h_veo.py
+    ├── Language/                  # LLM dialogue and streaming module
+    │   └── h_streamTalk.py
+    ├── Audio/                     # Text-to-Speech and caching module
+    │   └── h_tts.py
+    ├── Listen/                    # Speech-to-Text (ASR) module
+    │   └── h_asr.py
+    └── README.md
 
 ## Setup and Installation
 
@@ -63,13 +63,15 @@ To avoid static, repetitive animations, the system employs Python's threading mo
 
 ### Installation
 1. Clone the repository:
-   `git clone https://github.com/yourusername/interactive-digital-human.git`
-   `cd interactive-digital-human`
+       git clone https://github.com/yourusername/interactive-digital-character.git
+       cd interactive-digital-character
 2. Install the required dependencies:
-   `pip install -r requirements.txt`
+       pip install -r requirements.txt
 
 ### Configuration
-Search for `API_KEY = "your_api"` in the following files and replace them with your actual credentials:
+During development, the external AI APIs were integrated via **Hongyun (宏云)**, an API service provider. 
+
+Search for `API_KEY = "YOUR_API_KEY_HERE"` in the following files and replace them with your actual credentials (and update the base URL if you are using a different provider):
 *   `Language/h_streamTalk.py`
 *   `Audio/h_tts.py`
 *   `Draw/h_seedream40_character_real.py`
@@ -78,8 +80,8 @@ Search for `API_KEY = "your_api"` in the following files and replace them with y
 
 ### Execution
 Run the Flask application:
-`python app.py`
-Access the interface by navigating to http://localhost:5000 in your web browser.
+    python app.py
+Access the interface by navigating to `http://localhost:5000` in your web browser.
 
 ## Demonstration
 A video demonstration of the complete workflow and interactive features can be viewed at: 
